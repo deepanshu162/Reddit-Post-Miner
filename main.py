@@ -1,8 +1,9 @@
 import sys
-from execution import fetch_search_rss
-from execution import parse_posts
-from execution import rank_posts
-from execution import format_output
+from execution.fetch_search_rss import fetch_rss
+from execution.parse_posts import parse_xml
+from execution.rank_posts import rank_posts
+from execution.format_output import format_results
+
 
 def main():
     # Force UTF-8 encoding for stdout/stderr to handle emojis on Windows terminal
@@ -43,3 +44,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
